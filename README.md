@@ -77,8 +77,3 @@ python -m mm_auto_eval.main
 
 Defaults: input `mm_eval_samples.jsonl`, output `outputs/results.jsonl`. See `.env.example` for timeouts and other flags. **OCR quality** can be tuned with `OCR_MIN_SCORE`.
 
-### Security / release checklist
-
-- Never commit `.env`. Use `.env.example` only as a template.
-- If this repo (or any copy-paste) ever included real API keys, **rotate those keys** at the provider.
-- Run `git status` before `git push` and confirm no secrets or `outputs/` are staged.
