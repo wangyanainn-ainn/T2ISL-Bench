@@ -23,7 +23,7 @@ Below shows three cases built from the same seed subject.
 ## Example: Semantic Leakage
 
 <p align="center">
-  <img src="Example-Semantic-Leakage.pdf" width="90%">
+  <img src="Example-Semantic-Leakage.jpg" width="90%">
 </p>
 
 In the conflicting condition, the model may alter the subject identity or introduce additional scene cues to make the target text appear more plausible. This effect is referred to as **semantic leakage**.
