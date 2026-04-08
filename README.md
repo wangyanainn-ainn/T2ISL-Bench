@@ -19,10 +19,11 @@ Below shows three cases built from the same seed subject.
 | conflict                | target text conflicts with subject semantics           |
 | conflict + anti_leakage | explicit constraint discouraging semantic compensation |
 
+
+## Example: Semantic Leakage
+
 <p align="center">
-  <img src="assets/fire_extinguisher/aligned.png" width="30%">
-  <img src="assets/fire_extinguisher/conflict.png" width="30%">
-  <img src="assets/fire_extinguisher/anti_leakage.png" width="30%">
+  <img src="assets/figure1.png" width="90%">
 </p>
 
 In the conflicting condition, the model may alter the subject identity or introduce additional scene cues to make the target text appear more plausible. This effect is referred to as **semantic leakage**.
@@ -222,7 +223,6 @@ The benchmark evaluates three aspects:
 
 * This repository focuses on **controlled evaluation**, not large-scale open-world coverage.
 * The design prioritizes **interpretability, controllability, and failure attribution**.
-* If any API keys were previously exposed, please rotate them before use.
 
 ---
 
