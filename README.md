@@ -123,14 +123,35 @@ Each case instantiates a controlled evaluation condition:
 
 ```
 .
+T2ISL-Bench/
+├── README.md
+├── requirements.txt
+├── .gitignore
+├── .env.example
+│
 ├── benchmark_cases/
 │   ├── text2sceneleakagebench_seeds_merged_v1.json
-│   ├── text2sceneleakagebench_cases_merged_v1.json
-├── evaluation/
-├── generation/
-├── scripts/
+│   └── text2sceneleakagebench_cases_merged_v1.json
+│
+├── benchmark/
+│   └── image_generator.py
+│
+├── mm_auto_eval/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── ocr_eval.py
+│   ├── prompts.py
+│   ├── utils.py
+│   └── vlm_eval.py
+│
 ├── assets/
-└── README.md
+│   └── fire_extinguisher/
+│       ├── aligned.png
+│       ├── conflict.png
+│       └── anti_leakage.png
+│
+├── run_pipeline.py
+└── run_image_generation.py
 ```
 
 Only the **merged benchmark files** are released. Intermediate construction splits are not included.
