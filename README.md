@@ -130,27 +130,22 @@ T2ISL-Bench/
 ├── .gitignore
 ├── .env.example
 │
-├── benchmark_cases/
+├── benchmark/
 │   ├── text2sceneleakagebench_seeds_merged_v1.json
 │   └── text2sceneleakagebench_cases_merged_v1.json
 │
-├── benchmark/
+├── generation/
 │   └── image_generator.py
 │
-├── mm_auto_eval/
+├── evaluation/
 │   ├── __init__.py
 │   ├── main.py
 │   ├── ocr_eval.py
 │   ├── prompts.py
 │   ├── utils.py
 │   └── vlm_eval.py
-│
-├── assets/
-│   └── fire_extinguisher/
-│       ├── aligned.png
-│       ├── conflict.png
-│       └── anti_leakage.png
-│
+│ 
+├── Example-Semantic-Leakage.jpg
 ├── run_pipeline.py
 └── run_image_generation.py
 ```
