@@ -6,28 +6,19 @@ Unlike conventional text rendering benchmarks, this benchmark focuses on the **i
 
 ---
 
-## Example: Semantic Leakage under Conflicting Text
-
-Below shows three cases built from the same seed subject.
-
-**Seed:** fire_extinguisher
-**Text anchor:** front of the extinguisher cylinder
-
-| Condition               | Description                                            |
-| ----------------------- | ------------------------------------------------------ |
-| aligned                 | target text matches subject semantics                  |
-| conflict                | target text conflicts with subject semantics           |
-| conflict + anti_leakage | explicit constraint discouraging semantic compensation |
-
-
 ## Example: Semantic Leakage
+
+The following figure illustrates semantic leakage in text-to-image generation under different text–subject relationships.
 
 <p align="center">
   <img src="Example-Semantic-Leakage.jpg" width="90%">
 </p>
 
-In the conflicting condition, the model may alter the subject identity or introduce additional scene cues to make the target text appear more plausible. This effect is referred to as **semantic leakage**.
 
+In the aligned condition, the target text is consistent with the subject’s default semantics.  
+In the conflicting condition, although the text can still be rendered correctly, it may induce changes in subject identity or introduce additional scene elements to make the text appear more semantically plausible.
+
+This phenomenon, where local text constraints influence global semantic interpretation, is referred to as  **semantic leakage**.
 ---
 
 ## Dataset Statistics
